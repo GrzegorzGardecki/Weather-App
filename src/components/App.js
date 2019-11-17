@@ -33,8 +33,9 @@ class App extends Component {
 
 
         const API =
-            `http://api.openweathermap.org/data/2.5/weather?q=${this.state.value}&APPID=efa2ef11f117f7485b2fca8e87a3a2f5&units=metric`
-
+            // `http://api.openweathermap.org/data/2.5/weather?q=${this.state.value}&APPID=6ca87870f831da81c52974e4940ffc326ca87870f831da81c52974e4940ffc32`
+            `http://api.openweathermap.org/data/2.5/weather?q=${this.state.value}&APPID=6ca87870f831da81c52974e4940ffc32`
+            
         //metoda asynchroniczna
         fetch(API)
             .then(response => {
