@@ -34,9 +34,7 @@ class App extends Component {
         //przekazanie tej metody do formularza
 
 
-        const API =
-            // `http://api.openweathermap.org/data/2.5/weather?q=${this.state.value}&APPID=6ca87870f831da81c52974e4940ffc326ca87870f831da81c52974e4940ffc32`
-            `http://api.openweathermap.org/data/2.5/weather?q=${this.state.value}&APPID=${APIKey}`;
+        const API = `http://api.openweathermap.org/data/2.5/weather?q=${this.state.value}&APPID=${APIKey}`;
             
         //metoda asynchroniczna
         fetch(API)
