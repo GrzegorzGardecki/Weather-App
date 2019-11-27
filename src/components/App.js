@@ -64,9 +64,9 @@ class App extends Component {
             })
             .catch(err => {
                 console.log(err)
-                this.setState(state => ({
+                this.setState(prevState => ({
                     err: true,
-                    city: this.state.value
+                    city: prevState.value
                 }))
             })
     }
